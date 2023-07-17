@@ -1,0 +1,15 @@
+type Mutation{
+    crearUsuario(userDto : UserDtoI, secretMessage : String!): UserDto
+}
+
+input UserDtoI{
+    nombre : String!
+    usuario : String!
+    password : String!
+    access : Int
+}
+
+input LoginUserI{
+    usuario : String
+    password : String
+}

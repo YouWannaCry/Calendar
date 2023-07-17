@@ -1,0 +1,17 @@
+type Query{
+    getAll : [UserDto]
+    login (userDto : LoginUserI!): UserDto
+}
+
+type UserDto {
+    id : Int
+    nombre : String
+    usuario : String
+    errors : [ErrorDto]
+    access : Int
+}
+
+type ErrorDto {
+    key: String
+    error: String
+}
